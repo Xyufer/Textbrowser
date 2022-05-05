@@ -2,7 +2,6 @@
 #define GUI_H
 
 #include "ui_gui.h"
-#include "httpclient.h"
 
 class Gui : public QWidget, private Ui::Gui
 {
@@ -10,6 +9,8 @@ class Gui : public QWidget, private Ui::Gui
 
 public:
     explicit Gui(QWidget *parent = nullptr);
+private slots:
+    void on_goButton_clicked();
 };
 
 #endif // GUI_H
